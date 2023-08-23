@@ -1,13 +1,23 @@
-require_relative 'my_enumerable'
-
-class MyList
-    include MyEnumerable
-
-    def initialize(*args)
-      @list = args
+module MyEnumerable
+  def all?
+    each do |element|
+      return false unless yield(element)
     end
+    true
+  end
 
-    def each
-      @list.each { |element| yield element }
+  def any?
+    each do |element|
+      return true if yield(element)
     end
+    false
+  end
+
+  def filter
+    result = []
+    each do |element|
+      result << element if yield(element)
+    end
+    result
+  end
 end
