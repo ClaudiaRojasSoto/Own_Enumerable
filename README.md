@@ -22,7 +22,7 @@
 
 # 📖 Create your own Enumerable <a name="about-project"></a>
 
-The purpose of this app is to learn how to use a module inside a class. For this, we have created a class called MyList and a module named MyEnumerable. This module, MyEnumerable, has been implemented to include a subset of the functionality provided by Enumerable.
+The purpose of this app is to learn how to use a module inside a class. For this we have created a class called MyList and a module named MyEnumerable. This module, MyEnumerable, has been implemented to include a subset of the functionality provided by Enumerable.
 
 
 ## 🛠 Built With <a name="built-with"></a>
